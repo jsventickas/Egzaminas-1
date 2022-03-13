@@ -1,37 +1,39 @@
-'use strict';
+"use strict";
 
-var anchors = document.getElementsByClassName('link')
-var burger = document.getElementsByClassName('burger');
+var anchors = document.getElementsByClassName("side-link");
+var burger = document.getElementById("burger");
+var sideNav = document.querySelector(".side-nav");
 
-//Toggles link style
-for (var x of anchors){
-x.addEventListener('click', function(){
+// Toggles links style
+for(var x of anchors){
+    x.addEventListener("click", function(){
 
-    for(var x of anchors){
-     x.classList.remove('selected');
-    }
-    this.classList.add('selected');
-   })
+        for(var x of anchors){
+            x.classList.remove("selected");
+        }
+        this.classList.add("selected");
+    })
 }
 
-//Toggle links display and burger style
-burger.addEventListener('click', function(){
- for (var x of anchors){
-  x.classList.toggle('block');
-  x.classList.remove('selected');
- }
- this.classList.toggle('rotate');
+// Toggle links display and burger style
+burger.addEventListener("click", function(){
+    for(var x of anchors){
+        x.classList.toggle("block");
+        x.classList.remove("selected");
+    }
+    sideNav.classList.toggle("transform-side");
+    this.classList.toggle("rotate");
 });
 
-//Change on resize
-window.addEventListener('resize', function(){
-for(var x of anchors){
- x.classList.remove('block');
- x.classList.remove('selected');
-}
-burger.classList.remove('rotate');
-
-})
+// Change on resize
+window.addEventListener("resize", function(){
+     for(var x of anchors){
+        x.classList.remove("block");
+        x.classList.remove("selected");
+    }
+    sideNav.classList.remove("transform-side");
+    burger.classList.remove("rotate");
+});
 
 function changeHeader(event, name){
       var tabs = document.querySelectorAll('.tab');
@@ -58,7 +60,7 @@ function changeHeader(event, name){
     //SWIPER
     var swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
 
   // If we need pagination

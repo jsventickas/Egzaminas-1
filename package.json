@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^6.8.4"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
