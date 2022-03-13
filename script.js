@@ -79,3 +79,11 @@ function changeHeader(event, name){
     el: '.swiper-scrollbar',
   },
 });
+
+//Buttons 
+function show1(){
+  document.getElementById('div1').style.display ='none';
+}
+function show2(){
+  document.getElementById('div1').style.display = 'block';
+}

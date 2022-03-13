@@ -45,17 +45,25 @@
 
 <form method="get">
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" placeholder="First name"><br>
+  <input type="text" id="fname" name="fname" placeholder="First name" required><br>
   
    <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" placeholder="Last name">
+  <input type="text" id="lname" name="lname" placeholder="Last name" required>
  
    <label for="pnumber">Phone number:</label><br>
-  <input type="text" id="pnumber" name="pnumber" placeholder="Phone number">
+  <input type="text" id="pnumber" name="pnumber" placeholder="Phone number" required>
  
   <h6>Type of subscription</h6>
 
+  <!-- //Buttns  -->
+  <div class="radioBtn">
+  <input type="radio" name="selector" id="" required> <span>Monthly</span>
+  <input type="radio" name="selector" id="" required><span>Yearly</span>
   
+  
+</div>
+
+  <input id="submit" type="submit" class="form" value="GET STARTED"/>
 </form>
 
 
@@ -63,7 +71,7 @@
     
     
   </div>
-  <input id="submit" type="submit" class="form" value="GET STARTED"/>
+  
   
   
     </div>
@@ -113,12 +121,18 @@
   <div class="thirdBox-2">
     
     <div class="twoImage"> 
-      <img id="salota" src="/app/images/salota.png" alt="">
-      <img  src="/app/images/salotos.png" alt="">
+      <div class="salota">
+        <p class="img-description">Explore</p>
+      </div>
+      <div class="salotos">
+        <p class="img-description">Apply</p>
+      </div>
     </div>
     
     <div class="oneImage">
-      <img src="/app/images/kojos.png" alt="">
+      
+      <div class="kojos"><p class="img-description">Receive</p></div>
+       
     </div>
   </div>
     </div>
@@ -279,7 +293,13 @@
   <input type="text" id="lname" name="lname" placeholder="Last name" required>
   <label for="lname">1</label><br>
   <input type="text" id="pnumber" name="pnumber" placeholder="Phone number" required><br>
-  <label for="pnumber">1</label><br>
+
+  <div class="radioBtn">
+  <input type="radio" name="selector" id="" required> <span>Personal</span>
+  <input type="radio" name="selector" id="" required><span>Company</span>
+  
+  
+</div>
 
   <input id="submit" type="submit" class="form" value="SEND"/>
 </form>
