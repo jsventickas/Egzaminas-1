@@ -186,7 +186,7 @@ nav {
   }
   #submit {
     cursor: pointer;
-    margin-top: 23px;
+    margin-top: 55px;
     display: flex;
     justify-content: center;
     color: white;
@@ -355,7 +355,6 @@ nav {
   .twoImage {
     display: flex;
     flex-direction: row;
-
     img {
       width: 168px;
       height: 168px;
@@ -705,6 +704,34 @@ nav {
     }
   }
 }
+.section-7 {
+  width: 100%;
+  height: 591px;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin: 0 auto;
+    margin-top: 67px;
+    margin-bottom: 31px;
+    width: 696px;
+    height: 44px;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  hr {
+    margin: 0 auto;
+    margin-bottom: 58px;
+    width: 64px;
+    height: 2px;
+    background: #6696e2;
+    color: #6696e2;
+    border: 0;
+  }
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
+}
 .section-9 {
   height: 143px;
   display: flex;
@@ -741,7 +768,7 @@ nav {
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 980px) {
   .navlogo {
     display: flex;
     justify-content: center;

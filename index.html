@@ -6,7 +6,12 @@
     <script src="https://kit.fontawesome.com/e57c2904bb.js" crossorigin="anonymous"></script>
     
     <title>Egazminas</title>
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="app/css/style.css">
 <body>
   <nav>
@@ -213,8 +218,81 @@
   </div>
   </div>
   </section>
-  <section class="section-7"></section>
-  <section class="section-8"></section>
+  <section class="section-7">
+    <h3>WHAT OUR CUSTOMERS ARE SAYING</h3>
+    <hr>
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><div class="testimonial-1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+        <div class="testimonial-1-name">
+        <img src="/app/images/testimonial.png" alt="">
+        <h5>Jeremy H. <br> <span>Manager</span></h5>
+        </div>
+      </div>
+      <div class="testimonial-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita.</p>
+        <div class="testimonial-1-name">
+        <img src="/app/images/testimonial.png" alt="">
+        <h5>John S. <br> <span>Freelancer</span></h5>
+        </div>
+      </div>
+      <div class="testimonial-3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+        <div class="testimonial-1-name">
+        <img src="/app/images/testimonial.png" alt="">
+        <h5>Susan W. <br> <span>Photographer</span></h5>
+        </div>
+      </div></div>
+    <!-- <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div> -->
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  
+</div>
+
+  </section>
+  <section class="section-8">
+    <h3>Contact Us</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <div class="form1">
+
+
+<form method="get">
+  
+  
+   
+  <input type="text" id="fname" name="fname" placeholder="First name" required>
+ <label for="fname">1</label><br>
+  
+  <input type="text" id="lname" name="lname" placeholder="Last name" required>
+  <label for="lname">1</label><br>
+  <input type="text" id="pnumber" name="pnumber" placeholder="Phone number" required><br>
+  <label for="pnumber">1</label><br>
+
+  <input id="submit" type="submit" class="form" value="SEND"/>
+</form>
+
+
+
+    
+    
+  </div>
+  
+
+    </div>
+  </section>
   <section class="section-9">
     <div class="footer-social">
       <img src="/app/images/facebook-logo.svg" alt="">
@@ -227,7 +305,7 @@
 <p>© 2019 Cheshire County</p>
     </div>
   </section>
-  
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
   
 </body>
